@@ -1,12 +1,13 @@
 ```
-python setup.py sdist bdist_wheel
-```
+import logPPP
 
-```
-pip install twine
-```
+logPPP.LEVEL = logPPP.logPPPLevel.DEBUG
+logPPP.IS_COLOR = True
 
-```
-twine upload dist/*
+logPPP.warning("warning", is_color=False)
+
+logPPP.error("error",is_color=False)
+
+logPPP.debug("debug")
 ```
 

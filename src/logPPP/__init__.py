@@ -5,7 +5,7 @@ from ._util import *
 from .logPPPLevel import logPPPLevel
 
 __all__ = ['__version__', 'IS_COLOR', 'LEVEL', 'logPPPLevel', 'info', 'warning', 'error', 'debug', 'critical']
-__version__ = '1.0.4'
+__version__ = '1.1.0'
 
 # 是否开启颜色
 IS_COLOR = True

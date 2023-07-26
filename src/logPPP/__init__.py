@@ -1,20 +1,13 @@
 import datetime
-import locale
-import sys
 
 from ._ConsoleColors import ConsoleColors
 from ._util import *
 from .logPPPLevel import logPPPLevel
 
 __all__ = ['__version__', 'logPPPLevel', 'info', 'warning', 'error', 'debug', 'critical']
-__version__ = '1.0.4'
+__version__ = '1.0.3'
 # 等级
 level = logPPPLevel.INFO
-
-# 设置控制台输出的编码为系统默认的本地化编码
-sys.stdout = open(sys.stdout.fileno(), mode='w', encoding=locale.getpreferredencoding())
-# 设置控制台错误输出的编码为系统默认的本地化编码
-sys.stderr = open(sys.stderr.fileno(), mode='w', encoding=locale.getpreferredencoding())
 
 
 # 日志输出

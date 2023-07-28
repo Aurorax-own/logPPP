@@ -16,7 +16,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
         with:
-          ref: main  # Explicitly specify the branch to checkout
+          ref: master  # Explicitly specify the branch to checkout
       - name: Set up Python
         uses: actions/setup-python@v2
         with:

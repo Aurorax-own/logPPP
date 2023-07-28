@@ -15,6 +15,12 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+        with:
+          ref: main  # Explicitly specify the branch to checkout
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'  # Replace 'x' with the desired Python version
       - name: Build and Publish
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'  # 仅在代码push到main分支时执行
         run: |

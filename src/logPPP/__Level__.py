@@ -1,4 +1,4 @@
-class logPPPLevel:
+class Level:
     DEBUG = {
         'level': 10,
         'name': 'DEBUG'

@@ -1,6 +1,6 @@
 import logPPP
 
-logPPP.LEVEL = logPPP.logPPPLevel.DEBUG
+logPPP.LEVEL = logPPP.Level.DEBUG
 logPPP.IS_COLOR = True
 
 logPPP.info("info", 'test', is_color=True)
